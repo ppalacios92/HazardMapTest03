@@ -22,7 +22,6 @@
 
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-
         <style>
         html, body {
             background-color: #ffffff;
@@ -44,7 +43,7 @@
         .ol-control {
             background-color: rgba(255,255,255,.4) !important;
             padding: 2px !important;
-        } 
+        }
         </style>
 
         <style>
@@ -101,11 +100,31 @@
             background-color: #f2f2f2;
             text-align: left;
         }
+        /* Estilos personalizados */
+        .map-title {
+            font-weight: bold;
+            text-align: Left;
+            margin-top: 11px;
+        }
+        .map-authors {
+            font-size: 14px;
+            color: blue;
+            text-align: Left;
+            margin-top: 8px;
+        }
+        .map-research {
+            font-style: italic;
+            text-align: Left;
+            margin-top: 8px;
+        }
         </style>
         <title>Hazard Map Test 03</title>
-        <h1>Hazard Map Test 03</h1>
     </head>
     <body>
+        <h1 class="map-title">Hazard Map Test 03</h1>
+        <div class="map-authors">Palacios Patricio, Celi Carlos & Poveda Jose (2024).</div>
+        <div class="map-research">Proposal for 2024 Seismic Hazard Model and Seismic Disaggregation Tool for Ecuador using Probabilistic Seismic Hazard Analysis (In progress)</div>
+
         <div id="map">
             <div id="popup" class="ol-popup">
                 <a href="#" id="popup-closer" class="ol-popup-closer"></a>
@@ -117,8 +136,14 @@
         <script src="./resources/functions.js"></script>
         <script src="./resources/ol.js"></script>
         <script src="./resources/ol-layerswitcher.js"></script>
-        <script src="layers/POINTS_hmap_mean_UHS_poe01_500y_2.js"></script><script src="layers/CurvasNivel_hmap_mean_PGA_poe01_500y_3.js"></script><script src="layers/ciudades_4.js"></script><script src="layers/bndEcuadorBoundary_5.js"></script>
-        <script src="styles/POINTS_hmap_mean_UHS_poe01_500y_2_style.js"></script><script src="styles/CurvasNivel_hmap_mean_PGA_poe01_500y_3_style.js"></script><script src="styles/ciudades_4_style.js"></script><script src="styles/bndEcuadorBoundary_5_style.js"></script>
+        <script src="layers/POINTS_hmap_mean_UHS_poe01_500y_2.js"></script>
+        <script src="layers/CurvasNivel_hmap_mean_PGA_poe01_500y_3.js"></script>
+        <script src="layers/ciudades_4.js"></script>
+        <script src="layers/bndEcuadorBoundary_5.js"></script>
+        <script src="styles/POINTS_hmap_mean_UHS_poe01_500y_2_style.js"></script>
+        <script src="styles/CurvasNivel_hmap_mean_PGA_poe01_500y_3_style.js"></script>
+        <script src="styles/ciudades_4_style.js"></script>
+        <script src="styles/bndEcuadorBoundary_5_style.js"></script>
         <script src="./layers/layers.js" type="text/javascript"></script> 
         <!-- <script src="./resources/Autolinker.min.js"></script> -->
         <!-- <script src="./resources/qgis2web.js"></script> -->
@@ -130,6 +155,5 @@
         </div>
         <div id="data-table-container"></div>
         <script src="./scripts/main.js"></script> <!-- Archivo JS principal -->
-
     </body>
 </html>
