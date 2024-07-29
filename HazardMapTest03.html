@@ -120,27 +120,37 @@
     /* Estilos personalizados */
     .map-title {
         font-weight: bold;
-        text-align: Left;
+        text-align: left;
         margin-top: 11px;
     }
     .map-authors {
-        font-size: 14px;
+        font-size: 16px;
         color: blue;
-        text-align: Left;
+        text-align: left;
         margin-top: 8px;
     }
     .map-research {
         font-style: italic;
-        text-align: Left;
-        margin-top: 8px;
+        text-align: left;
+        margin-top: 10px;
+    }
+    #logo {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        height: 120px;
+        /* width: 500px; */
     }
     </style>
     <title>Hazard Map Test 03</title>
 </head>
 <body>
-    <h1 class="map-title">Hazard Map Test 03</h1>
-    <div class="map-authors">Palacios Patricio, Celi Carlos & Poveda Jose (2024).</div>
-    <div class="map-research">Proposal for 2024 Seismic Hazard Model and Seismic Disaggregation Tool for Ecuador using Probabilistic Seismic Hazard Analysis (In progress)</div>
+    <div>
+        <h1 class="map-title">Proposal for 2024 Seismic Hazard Model and Seismic Disaggregation Tool for Ecuador<br>using Probabilistic Seismic Hazard Analysis (In progress)</h1>
+        <div class="map-authors">Palacios Patricio, Celi Carlos & Poveda Jose (2024).</div>
+        <div class="map-research">HAZARD MAP TEST 03</div>
+    </div>
+    <img id="logo" src="images/Torrefuerte.jpg" alt="LogoTorrefuerte">
 
     <div id="map">
         <div id="popup" class="ol-popup">
