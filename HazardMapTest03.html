@@ -163,14 +163,22 @@
     <script src="./resources/functions.js"></script>
     <script src="./resources/ol.js"></script>
     <script src="./resources/ol-layerswitcher.js"></script>
-    <script src="layers/POINTS_hmap_mean_UHS_poe01_500y_2.js"></script>
     <script src="layers/CurvasNivel_hmap_mean_PGA_poe01_500y_3.js"></script>
     <script src="layers/ciudades_4.js"></script>
     <script src="layers/bndEcuadorBoundary_5.js"></script>
-    <script src="layers/hazard_curve_mean_PGA_6.js"></script>
-    <script src="layers/hazard_curve_mean_SA_0_5_7.js"></script>
-    <script src="layers/hazard_curve_mean_SA_1_8.js"></script>
-    <script src="styles/POINTS_hmap_mean_UHS_poe01_500y_2_style.js"></script>
+
+    <script src="layers/hazard_curvemeanPGA_0.js"></script>
+    <script src="layers/hazard_curvemeanSA01_1.js"></script>
+    <script src="layers/hazard_curvemeanSA02_2.js"></script>
+    <script src="layers/hazard_curvemeanSA05_3.js"></script>
+    <script src="layers/hazard_curvemeanSA10_4.js"></script>
+
+    <script src="layers/POINTS_hmap_mean_UHS_poe01_500y_2.js"></script>
+    <script src="layers/quantile_uhs_0_84_0.js"></script>
+    <script src="layers/quantile_uhs_0_16_1.js"></script>
+    <script src="layers/quantile_uhs_0_5_2.js"></script>
+
+    <script src="styles/POINTS_hmap_mean_UHS_poe01_500y_2_style.js"></script>    
     <script src="styles/CurvasNivel_hmap_mean_PGA_poe01_500y_3_style.js"></script>
     <script src="styles/ciudades_4_style.js"></script>
     <script src="styles/bndEcuadorBoundary_5_style.js"></script>
@@ -187,7 +195,10 @@
         <canvas id="myChart2"></canvas>
         <div id="coordinates"></div>
     </div>
-
-    <script src="./scripts/main.js"></script> <!-- Archivo JS principal -->
+    <script src="./scripts/map.js"></script>
+    <script src="./scripts/uhsChart.js"></script>
+    <script src="./scripts/hazardCurvesChart.js"></script>
+    <script src="./scripts/geojsonLayers.js"></script>
+    <script src="./scripts/helpers.js"></script>
 </body>
 </html>
