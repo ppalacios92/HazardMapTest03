@@ -35,6 +35,7 @@ function initHazardCurvesChart() {
                 },
                 y: {
                     type: 'logarithmic', // Escala logarítmica
+                    min: 0.001, // Valor mínimo del eje Y
                     title: {
                         display: true,
                         text: 'PoE in 50y',
@@ -165,6 +166,7 @@ function showAdditionalCharts(coordinates) {
                 },
                 y: {
                     type: 'logarithmic', // Escala logarítmica
+                    min: 0.001, // Valor mínimo del eje Y
                     title: {
                         display: true,
                         text: 'PoE in 50y',
