@@ -67,7 +67,7 @@ function addGeoJsonLayers(map) {
 
     // Función para actualizar la visibilidad de los puntos en función del nivel de zoom
     function updatePointVisibility() {
-        if (map.getZoom() >= 9.5) {
+        if (map.getZoom() >= 10) {
             if (!map.hasLayer(geojsonLayer)) {
                 map.addLayer(geojsonLayer);
             }
